@@ -102,6 +102,7 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl-legacy \
+    libshim_camera \
     libcamera_parameters_shim \
     Snap
 
