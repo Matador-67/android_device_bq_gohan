@@ -215,6 +215,7 @@ BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
 TARGET_LD_SHIM_LIBS := \
     /system/lib/libcamera_client.so|libcamera_parameters_shim.so \
     /vendor/lib/libizat_core.so|libshims_get_process_name.so \
+    /vendor/lib/libmmcamera_ppeiscore.so|libcamera_ppeiscore_shim.so \
     /vendor/lib/libflp.so|libshims_flp.so
 
 # Vendor Interface Manifest

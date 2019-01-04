@@ -106,6 +106,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl-legacy \
     libshim_camera \
     libcamera_parameters_shim \
+    libcamera_ppeiscore_shim \    
     Snap
 
 # ConfigStore
