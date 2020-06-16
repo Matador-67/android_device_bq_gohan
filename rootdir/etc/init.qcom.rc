@@ -367,11 +367,11 @@ on property:init.svc.wpa_supplicant=stopped
 on property:bluetooth.isEnabled=true
     write /sys/class/bluetooth/hci0/idle_timeout 7000
 
-on property:bluetooth.dun.status=running
-    start bt-dun
+on property:vendor.bluetooth.dun.status=running
+    start vendor.bt-dun
 
-on property:bluetooth.dun.status=stopped
-    stop bt-dun
+on property:vendor.bluetooth.dun.status=stopped
+    stop vendor.bt-dun
 
 on property:ro.bluetooth.ftm_enabled=true
     start ftmd
@@ -423,13 +423,13 @@ service hciattach /vendor/bin/init.qcom.bt.sh
     seclabel u:r:bluetooth_loader:s0
     oneshot
 
-on property:bluetooth.hciattach=true
+on property:vendor.bluetooth.hciattach=true
     start hciattach
 
-on property:bluetooth.hciattach=false
+on property:vendor.bluetooth.hciattach=false
     setprop bluetooth.status off
 
-service bt-dun /vendor/bin/dun-server /dev/smd7 /dev/rfcomm0
+service vendor.bt-dun /vendor/bin/dun-server /dev/smd7 /dev/rfcomm0
     class late_start
     user bluetooth
     group bluetooth net_bt_admin inet
