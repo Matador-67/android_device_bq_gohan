@@ -1,3 +1,4 @@
 allow dataservice_app qtitetherservice_service:service_manager add;
 allow dataservice_app ipa_dev:chr_file { read write };
 allow dataservice_app qmuxd_socket:dir { search };
+allow dataservice_app qtitetherservice_service:service_manager { add };
