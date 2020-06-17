@@ -1,0 +1,2 @@
+allow hvdcp sysfs:dir { read };
+allow hvdcp hvdcp:capability { dac_override };
