@@ -1,0 +1,2 @@
+allow system_server dalvikcache_data_file:file { execute };
+allow system_server dalvikcache_data_file:file { write };
