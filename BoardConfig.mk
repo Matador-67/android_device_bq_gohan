@@ -118,17 +118,17 @@ ifeq ($(HOST_OS),linux)
 endif
 WITH_DEXPREOPT_BOOT_IMG_ONLY ?= true
 
-# Added to indicate that protobuf-c is supported in this build
-PROTOBUF_SUPPORTED := true
-
 # Display
+BOARD_USES_ADRENO := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
+SF_VSYNC_EVENT_PHASE_OFFSET_NS := 2000000
+TARGET_CONTINUOUS_SPLASH_ENABLED := true
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 TARGET_USES_C2D_COMPOSITION := true
 TARGET_USES_ION := true
 TARGET_USES_OVERLAY := true
 USE_OPENGL_RENDERER := true
-
+VSYNC_EVENT_PHASE_OFFSET_NS := 6000000
 
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
@@ -139,6 +139,7 @@ MAX_EGL_CACHE_KEY_SIZE := 12*1024
 # binaries. Decrease the size if RAM or Flash Storage size is a limitation
 # of the device.
 MAX_EGL_CACHE_SIZE := 2048*1024
+MAX_VIRTUAL_DISPLAY_DIMENSION := 2048
 
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 
@@ -203,6 +204,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 
 # RIL
 TARGET_RIL_VARIANT := caf
+PROTOBUF_SUPPORTED := true
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
