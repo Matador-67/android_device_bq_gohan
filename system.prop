@@ -175,5 +175,6 @@ persist.fd.scron.timer=5000
 # Time services
 persist.timed.enable=true
 
-# WiFi
+# Wi-fi
+net.tcp.2g_init_rwnd=10
 wifi.interface=wlan0
