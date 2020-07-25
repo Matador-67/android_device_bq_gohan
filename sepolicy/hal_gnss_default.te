@@ -1,0 +1,7 @@
+allow hal_gnss_default self:socket { create ioctl read };
+allow hal_gnss_default socket_device:dir { add_name remove_name write };
+allow hal_gnss_default socket_device:sock_file { create unlink };
+allow hal_gnss_default sysfs:dir { open read };
+allow hal_gnss_default sysfs:file { getattr open read };
+allow hal_gnss_default vndbinder_device:chr_file ioctl;
+allow hal_gnss_default vndservicemanager:binder call;

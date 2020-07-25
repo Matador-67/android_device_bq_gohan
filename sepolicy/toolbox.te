@@ -1,3 +1,7 @@
 allow toolbox init:fifo_file { getattr write };
 allow toolbox init:unix_stream_socket connectto;
 allow toolbox property_socket:sock_file write;
+allow toolbox system_prop:property_service set;
+allow toolbox rmnet_mux_prop:file { getattr open read };
+allow toolbox self:capability chown;
+allow toolbox sysfs:file { getattr setattr };

@@ -1,2 +1,11 @@
-allow system_server dalvikcache_data_file:file { execute };
-allow system_server dalvikcache_data_file:file { write };
+allow system_server dalvikcache_data_file:file { execute write };
+allow system_server default_android_hwservice:hwservice_manager find;
+allow system_server block_device:blk_file { getattr ioctl open read write };
+allow system_server dalvikcache_data_file:file execute;
+allow system_server default_android_service:service_manager add;
+allow system_server device:chr_file { getattr ioctl open read write };
+allow system_server init:binder call;
+allow system_server self:socket ioctl;
+allow system_server socket_device:dir { add_name remove_name write };
+allow system_server socket_device:sock_file { create unlink };
+allow system_server vfat:dir { open read };

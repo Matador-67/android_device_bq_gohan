@@ -1,0 +1,2 @@
+allow audioserver sysfs:dir r_dir_perms;
+allow audioserver unlabeled:file { open read getattr };
