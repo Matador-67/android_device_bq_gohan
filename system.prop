@@ -97,6 +97,9 @@ vidc.enc.dcvs.extra-buff-count=2
 vidc.enc.narrow.searchrange=1
 persist.media.treble_omx=false
 
+# NFC
+ro.hardware.nfc_nci
+
 # Perf
 ro.core_ctl_min_cpu=2
 ro.core_ctl_max_cpu=4
