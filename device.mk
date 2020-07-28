@@ -317,7 +317,7 @@ PRODUCT_PACKAGES += \
 
 # Thermal
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/system/etc/thermal-engine.conf
+    $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT)/system/etc/thermal-engine.conf
 
 # Vendor prebuilts
 PRODUCT_COPY_FILES += \
