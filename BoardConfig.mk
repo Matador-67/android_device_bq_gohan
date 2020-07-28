@@ -186,7 +186,7 @@ BOARD_HARDWARE_CLASS := device/bq/gohan/lineagehw/src
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/soc.0/7af6000.i2c/i2c-6/6-0020/input/input0/wake_gesture"
 
 # NFC
-#BOARD_NFC_CHIPSET := pn547
+BOARD_NFC_CHIPSET := pn547
 
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
