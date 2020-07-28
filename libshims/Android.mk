@@ -77,7 +77,7 @@ LOCAL_SRC_FILES := \
 
 LOCAL_SHARED_LIBRARIES := libgui libui
 LOCAL_C_INCLUDES := frameworks/native/include
-LOCAL_MODULE := libshim_camera_ppeiscore
+LOCAL_MODULE := libcamera_ppeiscore_shim
 LOCAL_MODULE_TAGS := optional
 LOCAL_MULTILIB := 32
 
