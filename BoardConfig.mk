@@ -222,7 +222,8 @@ TARGET_LD_SHIM_LIBS := \
     /system/lib/libcamera_client.so|libcamera_parameters_shim.so \
     /vendor/lib/libizat_core.so|libshims_get_process_name.so \
     /vendor/lib/libmmcamera_ppeiscore.so|libcamera_ppeiscore_shim.so \
-    /vendor/lib/libflp.so|libshims_flp.so
+    /vendor/lib/libflp.so|libshims_flp.so \
+    /vendor/lib/hw/camera.msm8952.so|libshim_camera.so
 
 # Vendor Interface Manifest
 DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/manifest.xml

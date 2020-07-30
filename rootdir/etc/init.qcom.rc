@@ -35,7 +35,6 @@ on early-init
     symlink /dev/pn547 /dev/pn54x
 
 on init
-    export LD_SHIM_LIBS /system/lib/libcamera_client.so|libcamera_parameters_shim.so:/system/lib/hw/camera.msm8952.so|libshim_camera.so
     # Set permissions for persist partition
     mkdir /persist 0771 system system
 
